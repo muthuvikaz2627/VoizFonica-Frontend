@@ -1,0 +1,195 @@
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.center-heading {
+  text-align: center;
+}
+
+.center-heading .section-title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #0f85ec;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.center-heading.colored .section-title {
+  color: #ffffff;
+}
+
+.center-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.center-text.colored {
+  color: #FFC0EB;
+}
+
+.center-text p {
+  margin-bottom: 30px;
+}
+
+.pricing-item {
+  background: rgb(255, 253, 255);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 45px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+ 
+}
+
+.pricing-item.active .pricing-header {
+  position: relative;
+}
+
+.pricing-item.active .pricing-header .pricing-title {
+  color: #fff;
+}
+
+.pricing-item.active .pricing-body .price-wrapper {
+  background-image: linear-gradient(135deg, rgb(231, 13, 13) 0%, yellow 100%);
+}
+
+.pricing-item.active .pricing-body .price-wrapper .currency {
+  color: #fff;
+}
+
+.pricing-item.active .pricing-body .price-wrapper .price {
+  color: #fff;
+}
+
+.pricing-item.active .pricing-body .price-wrapper .period {
+  color: #fff;
+}
+
+.pricing-item .pricing-header {
+  text-align: center;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.pricing-item .pricing-header .pricing-title {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: -20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, orangered 0%, purple 100%);
+}
+
+.pricing-item .pricing-body {
+  margin-bottom: 40px;
+ 
+}
+
+.pricing-item .pricing-body .price-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  background: #ede8e8;                   /*side heading*/
+}
+
+.pricing-item .pricing-body .price-wrapper .currency {
+  height: 47px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #e64b3d;
+  position: relative;
+  top: -15px;
+}
+
+.pricing-item .pricing-body .price-wrapper .price {
+  font-weight: 700;
+  font-size: 34px;
+  color: #e64b3d;
+  letter-spacing: 2.12px;
+}
+
+.pricing-item .pricing-body .price-wrapper .period {
+  font-weight: 700;
+  font-size: 14px;
+  color: #f59188;
+  letter-spacing: 0.88px;
+}
+
+.pricing-item .pricing-body .list li {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(250, 89, 89);
+  letter-spacing: 0.88px;
+  text-decoration: line-through;
+}
+
+.pricing-item .pricing-body .list li.active {
+  color: red;
+  text-decoration: none;
+}
+
+.pricing-item .pricing-footer {
+  text-align: center;
+}
+
+.btn-primary-line {
+    width: 160px;
+    margin: auto;
+    display: inline-block;
+    height: 44px;
+    line-height: 45px;
+    text-align: center;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    outline: none !important;
+    cursor: pointer;
+    text-decoration: none !important;
+    position: relative;
+}
+.pricing-item .pricing-footer .btn-primary-line {
+  border: 4px solid orangered;
+  color: orangered;
+  height: 42px;
+  line-height: 36px;
+  border-radius:10px
+}
+
+.pricing-item .pricing-footer .btn-primary-line:hover {
+  background: orangered;
+  color: #fff;
+}

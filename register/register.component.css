@@ -1,0 +1,35 @@
+/* .register-block{
+    background-image: url("https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg");
+    float:left;
+    width:100%;
+   
+    padding : 190px 0;
+}
+
+.container{background:rgb(55, 101, 228); border-radius: 10px; color: black; width: 40%; height: 40%;}
+.register-sec{padding: 50px 30px; position:relative;}
+.register-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #fbfcfd;}
+.register-sec h2:after{content:" "; width:100px; height:5px; background:#0caae9; display:block; margin-top:50px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #0caae9; color:#fff; font-weight:600;} */
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+   
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+   
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+  

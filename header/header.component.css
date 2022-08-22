@@ -1,0 +1,110 @@
+/* ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: rgb(7, 7, 7);
+
+  }
+
+ 
+
+  li {
+
+    float: left;
+
+  }
+
+ 
+
+  li a {
+
+    display: block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+  }
+
+ 
+
+  li a:hover:not(.active) {
+
+    background-color: #111;
+
+  }
+
+ 
+
+  .active {
+
+    background-color: #0caae9;
+
+  } */
+
+  body{ margin:0; font-family:'tahoma'}
+
+nav {
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  display:inline-block;
+  background:black;
+}
+
+nav ul {
+  margin:0;padding:0;
+  list-style-type:none;
+ 
+  display:inline-block;
+}
+
+nav ul li {
+  position:relative;
+  margin:0 20px 0 0;
+ 
+  display:inline-block;
+}
+
+li > a:after { content: ' »'; } /* Change this in order to change the Dropdown symbol */
+
+li > a:only-child:after { content: ''; }
+
+nav ul li a {
+  padding:20px;
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+
+nav ul li a:hover {
+  background-color: #0caae9;
+  color: white;
+}
+
+nav ul li ul {
+  display:none;
+  position:absolute;
+  left:0;
+  background:black;
+  float:left;
+}
+
+nav ul li ul li {
+  width:100%;
+  border-bottom:1px solid #0caae9;
+}
+
+nav ul li:hover ul {
+  display:block;
+}

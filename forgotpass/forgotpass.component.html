@@ -1,0 +1,102 @@
+<!-- <body background="/assets/bk.png">
+    <div class="container1">
+      <img src="/assets/login.png" alt="Girl in a jacket" style="width:0px;height:900px;  ">
+    </div> 
+    
+    
+    
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+    
+          <form class="login"   action="post" [formGroup]="profileForm">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="text" class="login__input" placeholder="User name / Email" formControlName="username">
+              </div>
+            <div *ngIf=" f['username'].touched" class="alert alert-danger">
+    
+              <div *ngIf="f['username'].invalid">Username is required</div>
+    
+            </div>
+    
+            <div class="login__field">
+                <i class="login__icon fas fa-lock"></i>
+                <input type="password" class="login__input" placeholder=" New Password" formControlName="conformpassword" required
+                min.length="8">
+                <div *ngIf=" f['password'].touched" class="alert alert-danger">
+       
+                  <div *ngIf="f['password'].invalid">invalid password</div>
+         
+                </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" class="login__input" placeholder=" Conform Password" formControlName="conformpassword" required
+              min.length="8">
+              <div *ngIf=" f['password'].touched" class="alert alert-danger">
+     
+                <div *ngIf="f['password'].invalid">invalid password</div>
+       
+              </div>
+          
+              </div>
+            </div>
+      <div class="text_field">
+
+        <input ngModel name="otp" type="text" formControlName="otp" required minlength="4">
+
+       
+
+        <span></span>
+
+        <label><button (click)="sendotp()">OTP</button></label>
+
+            
+            <button class="button login__submit" type="submit" id="submit" value="" >
+              <span class="button__text"><a href="/home">Submit</a></span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+  -->
+
+<html>
+
+<head>
+  <Title>Forgot Password</Title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <form method="post" [formGroup]="profileForm">
+  <div class="form">
+    <h2>Forgot Password</h2>
+    
+      <div class="input">
+        <div class="inputBox">
+          <label for="">Email ID</label>
+          <input type="text" formControlName="email">
+        </div>
+        <div class="inputBox">
+          <label for="">New Password</label>
+          <input type="password" formControlName="password">
+        </div>
+        <div class="inputBox">
+          <label for="">Confirm Password</label>
+          <input type="password" formControlName="confirmpassword">
+        </div>
+
+        <div class="inputBox">
+          <label for="">OTP</label>
+          <input type="password">
+        </div>
+        <button (click)="sendotp">Generate</button>
+        <div class="inputBox">
+          <input type="submit" name="" value="Set Password">
+        </div>
+      </div>
+  </div>
+  </form>
+</body>
+
+</html>

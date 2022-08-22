@@ -1,0 +1,105 @@
+<body class="back">
+
+   <section class="register-block">
+      <div class="container">
+         <div class="row ">
+            <div class="col register-sec">
+               <h2 class="text-center">Payment</h2>
+
+               
+               <form class="register-form" role="form" action="post" [formGroup]="profileForm" (ngSubmit)="send()">
+
+
+                  <div class="form-group">
+                     <label for="exampleInputEmail1" style="color: aliceblue;">Name</label>
+
+                     <input type="text" id="name" class="form-control" value="" name="name" formControlName="name" required>
+
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1" style="color: aliceblue;">Email</label>
+
+                     <input type="text" id="email" class="form-control" value="" name="email" formControlName="email" required>
+
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputNumber1" style="color: aliceblue;">Mobile Number</label>
+                     <input type="text" class="form-control" id="phno" value="" name="phno" formControlName="phno" required>
+
+                  </div>
+
+                  <div class="form-group">
+                     <label for="exampleInputCard1" style="color: aliceblue;">Account Number</label>
+                     <input type="text" class="form-control" id="accno" value="" name="accno" formControlName="accno" required>
+                  </div>
+
+
+                  <div class="form-group">
+                     <label for="exampleInputPassword1" style="color: aliceblue;">CVV</label>
+                     <input class="form-control" type="password" id="cvv" value="" name="cvv" formControlName="cvv" required minlength="8">
+
+
+
+
+                  </div>
+                  <button class="btn btn-primary send-button" id="send" type="submit" value="submit" >Pay</button>
+                  
+
+               </form>
+              
+
+
+            </div>
+
+         </div>
+
+         
+
+
+      </div>
+      <h3 style="text-align: center; color: green;">{{success}}</h3>
+   </section>
+
+</body>
+
+<!-- 
+<div class="mainscreen">
+   
+     <div class="card">
+       <div class="leftside">
+         <img
+           src="/assets/payment.jfif"
+           class="product"
+           alt="Shoes"
+         />
+       </div>
+       <div class="rightside">
+         <form action="">
+           <h1>CheckOut</h1>
+           <h2>Payment Information</h2>
+           <p>Cardholder Name</p>
+           <input type="text" class="inputbox" name="name" required />
+           <p>Card Number</p>
+           <input type="number" class="inputbox" name="card_number" id="card_number" required />
+
+           <p>Card Type</p>
+           <select class="inputbox" name="card_type" id="card_type" required>
+             <option value="">--Select a Card Type--</option>
+             <option value="Visa">Visa</option>
+             <option value="RuPay">RuPay</option>
+             <option value="MasterCard">MasterCard</option>
+           </select>
+<div class="expcvv">
+
+           <p class="expcvv_text">Expiry</p>
+           <input type="date" class="inputbox" name="exp_date" id="exp_date" required />
+
+           <p class="expcvv_text2">CVV</p>
+           <input type="password" class="inputbox" name="cvv" id="cvv" required />
+       </div>
+           <p></p>
+           <button type="submit" class="button">CheckOut</button>
+         </form>
+       </div>
+     </div>
+   </div> -->

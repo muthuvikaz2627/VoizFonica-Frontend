@@ -1,0 +1,101 @@
+<!-- <style>
+  input.ng-invalid {
+      background-color:pink;
+  }
+  input.ng-valid {
+      background-color:lightgreen;
+  }
+</style> -->
+<app-header></app-header>
+<body ng-app="">
+  <section id="contact">
+    
+      <h1 class="section-header"><img src="/assets/logo.png" class="up"><b> Contact Us!</b></h1>
+      
+      <div class="contact-wrapper">
+      
+      <!-- Left contact page --> 
+        
+        <form id="contact-form" name="myemailform" action="https://mailthis.to/" class="form-horizontal" encType="multipart/form-data" role="form" [formGroup]="profileForm" method="post">
+           
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NAME"  name="name" value="" formControlName="name">
+            </div>
+          </div>
+          <div *ngIf=" f['name'].touched" class="text-danger">
+            <div *ngIf="f['name'].invalid" class="text-danger">Name is required</div>
+            </div>
+            <!-- //<div *ngIf="f['name'].valid" class="">Name is Validated </div> -->
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" formControlName="email">
+            </div>
+          </div>
+          <div *ngIf=" f['email'].touched" class="text-danger">
+            <div *ngIf="f['email'].invalid">Email is required</div>
+            </div>
+            <!-- <div *ngIf="f['email'].valid" class="alert alert-success">Email is Validated </div>
+     -->
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" value="" name="message" formControlName="message" ></textarea>
+          <div *ngIf=" f['message'].touched" class="text-danger">
+            <div *ngIf="f['message'].invalid">Message is required</div>
+            </div>
+            <!-- <div *ngIf="f['message'].valid" class="alert alert-success">Message is Validated </div> -->
+          
+          <button class="btn btn-primary send-button" id="send" type="submit" value="submit" (click)="send()">
+            <div class="alt-send-button">
+              <i class="glyphicon glyphicon-envelope" style="font-size:24px;color:white"></i><br><span class="send-text" style="font-size: medium;"> SEND</span>
+            </div>
+            
+          
+          </button>
+          <h3 class="text-success">{{success}}</h3>
+          
+          
+        </form>
+        
+      <!-- Left contact page --> 
+        
+          <div class="direct-contact-container">
+    
+            <ul class="contact-list">
+              <li class="list-item"><i class="glyphicon glyphicon-map-marker" style="font-size:24px;color:black;"><span class="contact-text place"><a href="https://www.google.co.in/maps/place/iPRIMED+Education+Solutions+Private+Limited/@12.8405903,75.415742,8z/data=!4m9!1m2!2m1!1siPRIMED+Education+Solutions+head+office!3m5!1s0x3bae6c867f4c5ffd:0x348229ed84aac52a!8m2!3d12.8403157!4d77.662544!15sCidpUFJJTUVEIEVkdWNhdGlvbiBTb2x1dGlvbnMgaGVhZCBvZmZpY2UiA4gBAVopIidpcHJpbWVkIGVkdWNhdGlvbiBzb2x1dGlvbnMgaGVhZCBvZmZpY2WSAQ90cmFpbmluZ19jZW50ZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTkxOemRYVEd4M1JSQUI">Bangalore, India</a></span></i></li>
+              
+              <li class="list-item"><i class="glyphicon glyphicon-phone" style="font-size:24px;color: black;"><span class="contact-text phone"><a href="tel:+91 948812375" title="Give me a call">+91 9488123975</a></span></i></li>
+              
+              <li class="list-item"><i class="glyphicon glyphicon-envelope" style="font-size:24px;color:black"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">voizfonicatele@gmail.com</a></span></i></li>
+              
+            </ul>
+    
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="icon ion-social-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+              <i class="icon ion-social-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="icon ion-social-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="icon ion-social-instagram" aria-hidden="true"></i></a>
+              </li>       
+            </ul>
+            <hr>
+    
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+    
+          </div>
+        
+      </div>
+      
+    </section>  
+    <div [hidden]="flag">              
+
+      <h4>User has Submitted the feedback SuccessFully!</h4>
+    
+    </div>
+  </body>
